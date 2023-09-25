@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Wollongong</title>
+    <link href="{% static 'css/login.css' %}" rel="stylesheet" >
+</head>
+
+
+<body>
+    <div class="app">
+        <div class="login-form">
+            <div class="title">Sign In</div>
+            <div id="loginResult"></div>
+            <div class="form">
+                <form id="loginForm" method="post" action="{% url 'login' %}">
+                    {% csrf_token %}
+                    <div class="input-container">
+                        <label for="uname">Username</label>
+                        <input type="text" id="uname" name="uname" required />
+                        <div id="unameError" class="error"></div>
+                    </div>
+                    <div class="input-container">
+                        <label for="pass">Password</label>
+                        <input type="password" id="pass" name="pass" required />
+                        <div id="passError" class="error"></div>
+                    </div>
+                    <div class="button-container">
+                        <input type="submit" value="Submit" />
+                    </div>
+                </form>
+            </div>
+            <button id="anonymous-reporting-button" onclick="navigateToAnonymousReporting()">
+                Do Anonymous Reportings
+            </button>
+        </div>
+    </div>
+</body>
+
+
+</html>

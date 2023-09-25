@@ -1,0 +1,167 @@
+[
+    {
+        "model": "sservice.student",
+        "pk": 1,
+        "fields": {
+            "id": 1,
+            "student_num": 179269,
+            "user_name": "liam_smith",
+            "first_name": "Liam",
+            "last_name": "Smith",
+            "password": "qvQZjmM6",
+            "email": "MWZOK.uowmail.edu.au",
+            "dob": "2003-12-21",
+            "phone": "59462195"
+        }
+    },
+    {
+        "model": "sservice.student",
+        "pk": 2,
+        "fields": {
+            "id": 2,
+            "student_num": 270128,
+            "user_name": "emma_jones",
+            "first_name": "Emma",
+            "last_name": "Jones",
+            "password": "hPwdRSpN",
+            "email": "WZYaM.uowmail.edu.au",
+            "dob": "2002-08-18",
+            "phone": "18734322"
+        }
+    },
+    {
+        "model": "sservice.student",
+        "pk": 3,
+        "fields": {
+            "id": 3,
+            "student_num": 330639,
+            "user_name": "noah_brown",
+            "first_name": "Noah",
+            "last_name": "Brown",
+            "password": "DouWjswr",
+            "email": "Ypjvz.uowmail.edu.au",
+            "dob": "2002-05-04",
+            "phone": "22857866"
+        }
+    },
+    {
+        "model": "sservice.student",
+        "pk": 4,
+        "fields": {
+            "id": 4,
+            "student_num": 857149,
+            "user_name": "olivia_lee",
+            "first_name": "Olivia",
+            "last_name": "Lee",
+            "password": "yu2oGsZC",
+            "email": "dILaP.uowmail.edu.au",
+            "dob": "2001-12-17",
+            "phone": "99807057"
+        }
+    },
+    {
+        "model": "sservice.student",
+        "pk": 5,
+        "fields": {
+            "id": 5,
+            "student_num": 559979,
+            "user_name": "ava_king",
+            "first_name": "Ava",
+            "last_name": "King",
+            "password": "7bXY1dvz",
+            "email": "pcgDo.uowmail.edu.au",
+            "dob": "2002-11-30",
+            "phone": "31823195"
+        }
+    },
+    {
+        "model": "sservice.student",
+        "pk": 6,
+        "fields": {
+            "id": 6,
+            "student_num": 234719,
+            "user_name": "ethan_clark",
+            "first_name": "Ethan",
+            "last_name": "Clark",
+            "password": "7x3y2ziq",
+            "email": "vuvgV.uowmail.edu.au",
+            "dob": "1995-02-01",
+            "phone": "16432678"
+        }
+    },
+    {
+        "model": "sservice.student",
+        "pk": 7,
+        "fields": {
+            "id": 7,
+            "student_num": 229165,
+            "user_name": "mia_white",
+            "first_name": "Mia",
+            "last_name": "White",
+            "password": "ahPCTcHw",
+            "email": "vMXpc.uowmail.edu.au",
+            "dob": "2003-12-22",
+            "phone": "78835032"
+        }
+    },
+    {
+        "model": "sservice.student",
+        "pk": 8,
+        "fields": {
+            "id": 8,
+            "student_num": 844676,
+            "user_name": "lily_young",
+            "first_name": "Lily",
+            "last_name": "Young",
+            "password": "n5AahHzf",
+            "email": "xejPP.uowmail.edu.au",
+            "dob": "2002-03-13",
+            "phone": "70144696"
+        }
+    },
+    {
+        "model": "sservice.student",
+        "pk": 9,
+        "fields": {
+            "id": 9,
+            "student_num": 910890,
+            "user_name": "lucas_scott",
+            "first_name": "Lucas",
+            "last_name": "Scott",
+            "password": "feHsqKyV",
+            "email": "Djike.uowmail.edu.au",
+            "dob": "2002-12-03",
+            "phone": "80330767"
+        }
+    },
+    {
+        "model": "sservice.student",
+        "pk": 10,
+        "fields": {
+            "id": 10,
+            "student_num": 366600,
+            "user_name": "jack_hall",
+            "first_name": "Jack",
+            "last_name": "Hall",
+            "password": "QGp2zxkA",
+            "email": "OmWlz.uowmail.edu.au",
+            "dob": "1996-06-16",
+            "phone": "11245895"
+        }
+    },
+    {
+        "model": "sservice.student",
+        "pk": 11,
+        "fields": {
+            "id": 11,
+            "student_num": 129206,
+            "user_name": "dai_dong",
+            "first_name": "Dai",
+            "last_name": "Dong",
+            "password": "dai_dong",
+            "email": "hzdsU.uowmail.edu.au",
+            "dob": "1998-06-28",
+            "phone": "64912695"
+        }
+    }
+]
