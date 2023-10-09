@@ -22,7 +22,8 @@ class Activity_View(APIView):
         Return a list of actvities for a student
         """
         # Get the 'user_name' query parameter from the request
-        user_name = request.query_params.get('user_name').replace(" ", "")
+        # user_name = request.query_params.get('user_name').replace(" ", "")
+        user_name = request.query_params.get('user_name')
 
         # Get the current time
         current_time = timezone.now()

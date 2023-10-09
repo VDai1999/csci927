@@ -16,20 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-# from django.urls import include, re_path
-# from django.conf.urls import include
-# from django.conf.urls import url
 
 from sservice.views import *
 
-
-# from sservice import urls as sservice_urls
-
-
-# urlpatterns = [
-#     path("admin/", admin.site.urls),
-#     path("", include(sservice_urls, namespace="sservice")),
-# ]
 
 urlpatterns = [
     path("admin/", admin.site.urls),
