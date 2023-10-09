@@ -1,0 +1,222 @@
+[
+    {
+        "model": "sservice.activity",
+        "pk": 1,
+        "fields": {
+            "id": 1,
+            "activity_num": 1,
+            "activity_name": "Tutor kids in math or reading",
+            "date_time_to_organize": "2023-11-24",
+            "num_of_spots": 2
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 2,
+        "fields": {
+            "id": 2,
+            "activity_num": 2,
+            "activity_name": "Clean up parks",
+            "date_time_to_organize": "2023-11-14",
+            "num_of_spots": 143
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 3,
+        "fields": {
+            "id": 3,
+            "activity_num": 3,
+            "activity_name": "Help at an animal shelter",
+            "date_time_to_organize": "2023-11-04",
+            "num_of_spots": 97
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 4,
+        "fields": {
+            "id": 4,
+            "activity_num": 4,
+            "activity_name": "Collect food donations",
+            "date_time_to_organize": "2023-10-31",
+            "num_of_spots": 191
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 5,
+        "fields": {
+            "id": 5,
+            "activity_num": 5,
+            "activity_name": "Visit seniors",
+            "date_time_to_organize": "2023-12-06",
+            "num_of_spots": 123
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 6,
+        "fields": {
+            "id": 6,
+            "activity_num": 6,
+            "activity_name": "Plant trees",
+            "date_time_to_organize": "2023-11-11",
+            "num_of_spots": 62
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 7,
+        "fields": {
+            "id": 7,
+            "activity_num": 7,
+            "activity_name": "Run charity races",
+            "date_time_to_organize": "2023-10-04",
+            "num_of_spots": 84
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 8,
+        "fields": {
+            "id": 8,
+            "activity_num": 8,
+            "activity_name": "Mentor younger students",
+            "date_time_to_organize": "2023-10-07",
+            "num_of_spots": 197
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 9,
+        "fields": {
+            "id": 9,
+            "activity_num": 9,
+            "activity_name": "Garden for food banks",
+            "date_time_to_organize": "2023-11-18",
+            "num_of_spots": 117
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 10,
+        "fields": {
+            "id": 10,
+            "activity_num": 10,
+            "activity_name": "Assist at events",
+            "date_time_to_organize": "2023-12-26",
+            "num_of_spots": 165
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 11,
+        "fields": {
+            "id": 11,
+            "activity_num": 11,
+            "activity_name": "Serve at shelters",
+            "date_time_to_organize": "2023-10-12",
+            "num_of_spots": 127
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 12,
+        "fields": {
+            "id": 12,
+            "activity_num": 12,
+            "activity_name": "Join youth groups",
+            "date_time_to_organize": "2023-12-20",
+            "num_of_spots": 59
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 13,
+        "fields": {
+            "id": 13,
+            "activity_num": 13,
+            "activity_name": "Fundraise for disasters",
+            "date_time_to_organize": "2023-12-12",
+            "num_of_spots": 127
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 14,
+        "fields": {
+            "id": 14,
+            "activity_num": 14,
+            "activity_name": "Aid at hospitals",
+            "date_time_to_organize": "2023-11-24",
+            "num_of_spots": 161
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 15,
+        "fields": {
+            "id": 15,
+            "activity_num": 15,
+            "activity_name": "Recycle materials",
+            "date_time_to_organize": "2023-12-26",
+            "num_of_spots": 116
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 16,
+        "fields": {
+            "id": 16,
+            "activity_num": 16,
+            "activity_name": "Organize charity auctions",
+            "date_time_to_organize": "2023-11-19",
+            "num_of_spots": 191
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 17,
+        "fields": {
+            "id": 17,
+            "activity_num": 17,
+            "activity_name": "Read to kids",
+            "date_time_to_organize": "2023-12-18",
+            "num_of_spots": 107
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 18,
+        "fields": {
+            "id": 18,
+            "activity_num": 18,
+            "activity_name": "Assist nonprofits",
+            "date_time_to_organize": "2023-11-19",
+            "num_of_spots": 137
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 19,
+        "fields": {
+            "id": 19,
+            "activity_num": 19,
+            "activity_name": "Coach youth sports",
+            "date_time_to_organize": "2023-12-18",
+            "num_of_spots": 177
+        }
+    },
+    {
+        "model": "sservice.activity",
+        "pk": 20,
+        "fields": {
+            "id": 20,
+            "activity_num": 20,
+            "activity_name": "Promote understanding",
+            "date_time_to_organize": "2023-11-16",
+            "num_of_spots": 125
+        }
+    }
+]

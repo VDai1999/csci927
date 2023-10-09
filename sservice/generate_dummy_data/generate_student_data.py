@@ -19,31 +19,25 @@ def random_generate_dob():
 
     return random_datetime.strftime("%Y-%m-%d")
 
-
-fake_data_dict = {
-    "first_name": ["Liam", "Emma", "Noah", "Olivia", "Ava", "Ethan", "Mia", "Lily", "Lucas", "Jack", "Dai"],
-    "last_name": ["Smith", "Jones", "Brown", "Lee", "King", "Clark", "White", "Young", "Scott", "Hall", "Dong"]
-}
-
 data = []
-for i in range(len(fake_data_dict["first_name"])):
+for i in range(10):
     temp_dict = {
         "model": "sservice.student",
         "pk": i + 1
     }
 
     # Get first name and last name
-    first_name = fake_data_dict["first_name"][i]
-    last_name = fake_data_dict["last_name"][i]
+    first_name = f"first{i + 1}"
+    last_name = f"last{i + 1}"
 
     # Student number
     student_num = random.randint(100000, 999999)
 
     # User name
-    user_name = f"{first_name.lower()}_{last_name.lower()}"
+    user_name = f"user{i + 1}"
 
     # Password
-    password = ''.join((random.choice(string.ascii_letters + string.digits) for i in range(8)))
+    password = f"pass{i + 1}"
 
     # Email
     email = ''.join((random.choice(string.ascii_letters) for i in range(5))) + ".uowmail.edu.au"

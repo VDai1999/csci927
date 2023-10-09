@@ -15,12 +15,24 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from django.conf.urls import include
+from django.urls import path, include
+# from django.urls import include, re_path
+# from django.conf.urls import include
+# from django.conf.urls import url
 
-from sservice import urls as sservice_urls
+from sservice.views import *
+
+
+# from sservice import urls as sservice_urls
+
+
+# urlpatterns = [
+#     path("admin/", admin.site.urls),
+#     path("", include(sservice_urls, namespace="sservice")),
+# ]
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include(sservice_urls, namespace="sservice")),
+    path("api/volunteer/", Activity_View.as_view(), name="volunteer"),
+    path("api/volunteer_enroll_unenroll/", Enroll_Unenroll_View.as_view(), name="enroll_unenroll")
 ]
