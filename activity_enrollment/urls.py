@@ -21,8 +21,7 @@ from sservice.views import *
 
 
 urlpatterns = [
-    # path("admin/", admin.site.urls),
-    path("", admin.site.urls),
+    path("admin/", admin.site.urls),
     path("api/volunteer/", Activity_View.as_view(), name="volunteer"),
     path("api/volunteer_enroll_unenroll/", Enroll_Unenroll_View.as_view(), name="enroll_unenroll")
 ]

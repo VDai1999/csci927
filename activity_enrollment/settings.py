@@ -11,10 +11,10 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-# BASE_DIR = Path(__file__).resolve().parent.parent
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = "django-insecure-@(cv*m+cpfq6az$u(s^6zp*ss0cv2=1btaajso-4itk$^e6p+i"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["volunteer-service.onrender.com", "13.228.225.19", "18.142.128.26", "54.254.162.138", "localhost"]
 
@@ -89,19 +89,15 @@ WSGI_APPLICATION = "activity_enrollment.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": BASE_DIR / "db.sqlite3",
-#     }
-# }
-
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": os.path.join(BASE_DIR, 'db.sqlite3')
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+
+if not DEBUG:
+    DATABASES['default'] = dj_database_url.parse("postgres://volunteer_service_user:dr1Ij0jwRttr9blnsZUbt2dqop1HBDMg@dpg-ckjgvgb6fquc739a88ng-a.singapore-postgres.render.com/volunteer_service")
 
 
 # Password validation

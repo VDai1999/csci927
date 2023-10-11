@@ -1,10 +1,6 @@
-from django.shortcuts import render, redirect, reverse
-from django.views.generic import TemplateView
-from django.http import JsonResponse
 from django.db import models
 from django.db.models import Count, F, Q
 from django.utils import timezone
-# from django.urls import reverse
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -22,7 +18,6 @@ class Activity_View(APIView):
         Return a list of actvities for a student
         """
         # Get the 'user_name' query parameter from the request
-        # user_name = request.query_params.get('user_name').replace(" ", "")
         user_name = request.query_params.get('user_name')
 
         # Get the current time
@@ -74,7 +69,7 @@ class Activity_View(APIView):
 class Enroll_Unenroll_View(APIView):
     def post(self, request):
         request_data = request.data
-        user_name = request_data.get('user_name', None).replace(" ", "")
+        user_name = request_data.get('user_name', None)
         student_status = request_data.get('status', None)
         activity_id = request_data.get('activity_id', None)
 
