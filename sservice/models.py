@@ -14,7 +14,7 @@ class Student(models.Model):
     phone = models.CharField(max_length=20, default="")
 
     def __str__(self):
-        return f"{self.id}, {self.student_num}, {self.user_name}, {self.first_name}, {self.last_name}, {self.email}, {self.dob}, {self.phone}"
+        return f"{self.user_name}"
 
 
 class Activity(models.Model):
@@ -25,7 +25,7 @@ class Activity(models.Model):
     num_of_spots = models.IntegerField(default=0)
 
     def __str__(self):
-        return f"{self.id}, {self.activity_num}, {self.activity_name}, {self.date_time_to_organize}"
+        return f"{self.activity_name}"
 
 
 class Student_Activity_Enrollment(models.Model):
@@ -42,7 +42,7 @@ class Student_Activity_Enrollment(models.Model):
 class No_Show_Records(models.Model):
     id = models.AutoField(primary_key=True)
     student = models.ForeignKey(Student, on_delete=models.CASCADE)
-    activity = models.ForeignKey(Activity, on_delete=models.CASCADE)
+    activity = models.ForeignKey(Activity, on_delete=models.CASCADE, null=True)
     date_time_records = models.DateField(auto_now_add=True)
 
     def __str__(self):

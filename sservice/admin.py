@@ -7,7 +7,6 @@ from .models import *
 @admin.register(Student)
 class StudentAdmin(admin.ModelAdmin):
     list_display = ('id', 'student_num', 'user_name', 'first_name', 'last_name', 'email')
-    # list_filter = ('user_name',)
 
 
 @admin.register(Activity)
@@ -18,6 +17,7 @@ class ActivityAdmin(admin.ModelAdmin):
 @admin.register(Student_Activity_Enrollment)
 class StudentActivityEnrollmentAdmin(admin.ModelAdmin):
     list_display = ('id', 'student', 'activity', 'date_time_enrolled', 'status')
+    list_filter = ('activity', 'status')
 
 
 @admin.register(No_Show_Records)
