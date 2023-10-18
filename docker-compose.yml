@@ -5,8 +5,6 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-    # command: gunicorn activity_enrollment.wsgi:application
-    # command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/app
     ports:
