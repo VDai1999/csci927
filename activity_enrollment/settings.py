@@ -26,8 +26,7 @@ SECRET_KEY = "django-insecure-@(cv*m+cpfq6az$u(s^6zp*ss0cv2=1btaajso-4itk$^e6p+i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["volunteer-service.onrender.com", "13.228.225.19", "18.142.128.26", "54.254.162.138", "localhost"]
-
+ALLOWED_HOSTS = ["csci927-volunteerapi.onrender.com", "13.228.225.19", "18.142.128.26", "54.254.162.138", "localhost", "127.0.0.1"]
 
 # Application definition
 
@@ -100,6 +99,16 @@ DATABASES = {
 
 if not DEBUG:
     DATABASES['default'] = dj_database_url.parse("postgres://volunteer_service_user:dr1Ij0jwRttr9blnsZUbt2dqop1HBDMg@dpg-ckjgvgb6fquc739a88ng-a.singapore-postgres.render.com/volunteer_service")
+#     DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'csci927_volunteer',
+#         'USER': 'postgres',
+#         'PASSWORD': 'csci927',
+#         'HOST': 'db',
+#         'PORT': 5432,
+#     }
+# }
 
 
 # Password validation
